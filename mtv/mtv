@@ -1,0 +1,7 @@
+#!/bin/sh
+mkdir -p /tmp/google-chrome-mtv
+cp -ru $HOME/.config/google-chrome/* /tmp/google-chrome-mtv
+google-chrome --app=https://www.mtv.fi/sarja/seitseman-uutiset-33001008 \
+              --user-data-dir=/tmp/google-chrome-mtv \
+              --window-size=1200,800 \
+              --class=mtv

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Spotify
+Icon=spotify
+Exec=spotify
+Categories=AudioVideo;Audio;Player;
+StartupNotify=true

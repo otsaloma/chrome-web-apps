@@ -1,0 +1,7 @@
+#!/bin/sh
+mkdir -p /tmp/google-chrome-spotify
+cp -ru $HOME/.config/google-chrome/* /tmp/google-chrome-spotify
+google-chrome --app=https://open.spotify.com/browse \
+              --user-data-dir=/tmp/google-chrome-spotify \
+              --window-size=1200,750 \
+              --class=spotify

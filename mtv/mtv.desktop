@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=MTV
+Icon=mtv
+Exec=mtv
+Categories=AudioVideo;Video;Player;
+StartupNotify=true

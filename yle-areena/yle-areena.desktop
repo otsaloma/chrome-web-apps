@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Yle Areena
+Icon=yle-areena
+Exec=yle-areena
+Categories=AudioVideo;Video;Player;
+StartupNotify=true
