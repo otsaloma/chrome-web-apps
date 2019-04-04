@@ -15,7 +15,7 @@ install:
 	sudo cp $(APP)/$(APP) $(PREFIX)/bin
 	sudo cp $(APP)/$(APP).desktop $(PREFIX)/share/applications
 	sudo cp $(APP)/$(APP).png $(PREFIX)/share/icons/hicolor/$(ICON_SIZE)/apps
-	update-icon-caches $(PREFIX)/share/icons/hicolor
+	sudo update-icon-caches $(PREFIX)/share/icons/hicolor
 
 install-all:
 	for X in $(APPS); do $(MAKE) APP=$$X install; done
@@ -25,7 +25,7 @@ uninstall:
 	sudo rm -f $(PREFIX)/bin/$(APP)
 	sudo rm -f $(PREFIX)/share/applications/$(APP).desktop
 	sudo rm -f $(PREFIX)/share/icons/hicolor/*/apps/$(APP).png
-	update-icon-caches $(PREFIX)/share/icons/hicolor
+	sudo update-icon-caches $(PREFIX)/share/icons/hicolor
 
 uninstall-all:
 	for X in $(APPS); do $(MAKE) APP=$$X uninstall; done
