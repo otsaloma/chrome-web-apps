@@ -1,7 +1,7 @@
 #!/bin/sh
 mkdir -p /tmp/google-chrome-yle-areena
 cp -ru $HOME/.config/google-chrome/* /tmp/google-chrome-yle-areena
-google-chrome --app=https://areena.yle.fi/tv/suorat/yle-tv1 \
+google-chrome --app=https://areena.yle.fi/tv/ohjelmat/uutiset \
               --user-data-dir=/tmp/google-chrome-yle-areena \
               --window-size=1200,800 \
               --class=yle-areena
